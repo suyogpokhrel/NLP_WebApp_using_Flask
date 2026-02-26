@@ -1,1 +1,22 @@
-{}
+{
+    "suyog@gmail.com": [
+        "suyog",
+        "12345"
+    ],
+    "user01@gmail.com": [
+        "user01",
+        "user0101"
+    ],
+    "user02@gmail.com": [
+        "user02",
+        "user0202"
+    ],
+    "user03@gmail.com": [
+        "user03",
+        "user0303"
+    ],
+    "user@gmail.com": [
+        "user02",
+        "user0202"
+    ]
+}
