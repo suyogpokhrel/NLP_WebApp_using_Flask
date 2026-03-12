@@ -1,7 +1,13 @@
-import paralleldots
+import spacy
 
-paralleldots.set_api_key("1eded93dd7e9fa44d4b205d2f36734f65a5a141c")
+nlp = spacy.load("en_core_web_sm")
 
 def ner(text):
-    ner = paralleldots.ner(text)
-    return ner
+    doc = nlp(text)
+    entities = []
+    for ent in doc.ents:
+        entities.append({
+            'name': ent.text,
+            'category': ent.label_
+        })
+    return {'entities': entities}

@@ -3,6 +3,7 @@ from db import Database
 import api
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key_here'  # Add a unique, secret key
 
 dbo = Database()
 
